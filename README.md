@@ -1,3 +1,1 @@
-#Slider
-
-##Meu primeiro slider.
+Meu primeiro slider.

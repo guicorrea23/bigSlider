@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    height: 30px;
+    background-color: #a73030;
+}
+
+.slider{
+    background-color: #3f0a0a;
+    flex: 1;
+    overflow: hidden;
+}
+
+.slider-move{
+    display: flex;
+    height: 100%;
+    transition: all ease 0.3s;
+}
+
+.img-container{
+    width: 100%;
+    height: inherit;
+    background-image: url('./images/chicago.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container p {
+    width: 600px;
+    background-color: rgba(33, 33, 33, 0.7);
+    box-shadow: 0px 1px 1px rgba(73, 71, 71, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 0px 1px 1px #222;
+    line-height: 30pt;
+    font-size: 24pt;
+}
+
+.img-container:first-child{
+    background-image: url('./images/boston.jpg');
+}
+
+.img-container:last-child {
+    background-image: url('./images/seattle.jpg');
+}
+
+.slider-controls{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.slider-control {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+    background-color: #a73030;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
